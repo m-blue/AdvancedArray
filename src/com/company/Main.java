@@ -11,7 +11,7 @@ public class Main {
         boolean isRunning = true;
 
         String[] Items = {"Lettuce", "Tomatoes", "Ground Beef", "Bread", "Cheese", "Onions", "Pickles", "Potatoes"};
-        int[] amount = {1,1,1,1,1,1,1,1};
+        int[] amount = {1,1,1,1,1,1,1,1}; // Parallel array with Items
 
         while (isRunning){ // Continues to Loop until user chooses to Exit
         for(int i = 0; i < Items.length; i++){ // Prints the List
@@ -52,7 +52,7 @@ public class Main {
         return null;
     }
 
-
+    // Allows the user to add or subtract the number if items that the user chose
     public static void ChangeAmount(int[] amount, int num){
         Scanner scanner = new Scanner(System.in);
         int userInput = 0;
